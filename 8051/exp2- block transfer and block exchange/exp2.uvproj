@@ -46,7 +46,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>exp3</OutputName>
+          <OutputName>exp2</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>exp3.asm</FileName>
+              <FileName>exp2.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\exp3.asm</FilePath>
+              <FilePath>.\exp2.asm</FilePath>
             </File>
           </Files>
         </Group>
