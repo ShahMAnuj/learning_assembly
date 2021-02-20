@@ -1,15 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/20/2021  13:56:19  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/20/2021  16:18:25  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\block_exchange.obj TO .\Objects\exp2 PRINT (.\Listings\exp2.m51) RAMSIZE (256)
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\block_exchange.obj TO .\Objects\exp2_block_exchange PRINT (.\Listings\exp2_block_e
+>> xchange.m51) RAMSIZE (256)
 
 
 INPUT MODULES INCLUDED:
   .\Objects\block_exchange.obj (BLOCK_EXCHANGE)
 
 
-LINK MAP OF MODULE:  .\Objects\exp2 (BLOCK_EXCHANGE)
+LINK MAP OF MODULE:  .\Objects\exp2_block_exchange (BLOCK_EXCHANGE)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -23,7 +24,7 @@ LINK MAP OF MODULE:  .\Objects\exp2 (BLOCK_EXCHANGE)
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\exp2 (BLOCK_EXCHANGE)
+SYMBOL TABLE OF MODULE:  .\Objects\exp2_block_exchange (BLOCK_EXCHANGE)
 
   VALUE           TYPE          NAME
   ----------------------------------

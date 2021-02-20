@@ -1,0 +1,3 @@
+".\Objects\block_exchange.obj" 
+TO ".\Objects\exp2_block_exchange" 
+PRINT(".\Listings\exp2_block_exchange.m51") RAMSIZE(256) 

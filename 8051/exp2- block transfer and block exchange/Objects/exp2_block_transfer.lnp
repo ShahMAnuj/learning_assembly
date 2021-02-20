@@ -1,0 +1,3 @@
+".\Objects\block_transfer.obj" 
+TO ".\Objects\exp2_block_transfer" 
+PRINT(".\Listings\exp2_block_transfer.m51") RAMSIZE(256) 

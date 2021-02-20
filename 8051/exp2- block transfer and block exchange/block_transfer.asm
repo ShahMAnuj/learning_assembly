@@ -1,0 +1,13 @@
+        ORG 0000H
+		
+		MOV R3,#0AH
+		MOV R0,#30H
+		MOV R1,#40H
+		UP: MOV A,@R0
+		MOV @R1,A
+		INC R0
+		INC R1
+		DJNZ R3,UP
+AGAIN:  SJMP AGAIN
+		
+		END

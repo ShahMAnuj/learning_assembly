@@ -1,3 +1,0 @@
-".\Objects\block_exchange.obj" 
-TO ".\Objects\exp2" 
-PRINT(".\Listings\exp2.m51") RAMSIZE(256) 

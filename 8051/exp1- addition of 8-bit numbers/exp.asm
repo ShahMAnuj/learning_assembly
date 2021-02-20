@@ -1,0 +1,8 @@
+        ORG 0000H
+		
+		MOV A,#10H
+		MOV R2,#0CDH
+		ADD A,R2
+AGAIN:	SJMP AGAIN
+		
+		END
