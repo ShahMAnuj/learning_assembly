@@ -194,8 +194,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\block_exchange.asm</PathWithFileName>
-      <FilenameWithoutPath>block_exchange.asm</FilenameWithoutPath>
+      <PathWithFileName>.\exp3.asm</PathWithFileName>
+      <FilenameWithoutPath>exp3.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

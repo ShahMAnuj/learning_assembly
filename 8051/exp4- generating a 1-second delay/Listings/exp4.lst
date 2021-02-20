@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  EXP4                                                                 02/20/2021 14:06:43 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\exp4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp4.asm SET(SMALL) DEBUG PRINT(.\Listings\exp4.lst) OBJECT(.\Objects\e
+                      xp4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1             ORG 0000H
+0000 7A14              2                     MOV R2,#14H
+0002 758910            3                     MOV TMOD,#10H
+                       4                     
+0005 758D4B            5     AGAIN:  MOV TH1,#4BH
+0008 758BFD            6                     MOV TL1,#0FDH
+000B D28E              7                     SETB TR1
+000D 308FFD            8     L1:             JNB TF1,L1
+0010 C28E              9                     CLR TR1
+0012 C28F             10                     CLR TF1
+0014 DAEF             11                     DJNZ R2,AGAIN
+                      12                     
+0016 80FE             13     HERE:   SJMP HERE
+                      14                     END
+A51 MACRO ASSEMBLER  EXP4                                                                 02/20/2021 14:06:43 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0005H   A   
+HERE . . . . . . .  C ADDR   0016H   A   
+L1 . . . . . . . .  C ADDR   000DH   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

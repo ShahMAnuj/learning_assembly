@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  EXP3                                                                 02/20/2021 14:02:27 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\exp3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp3.asm SET(SMALL) DEBUG PRINT(.\Listings\exp3.lst) OBJECT(.\Objects\e
+                      xp3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1             ORG 0000H
+                       2     
+0000 7BFF              3     AGAIN:  MOV R3,#0FFH
+0002 1108              4     L3:     ACALL DELAY
+0004 DBFC              5             DJNZ R3,L3
+0006 80F8              6             SJMP AGAIN
+                       7     
+0008 7AFF              8     DELAY:  MOV R2,#0FFH
+000A 79FF              9     L2:     MOV R1,#0FFH
+000C D9FE             10     L1:     DJNZ R1,L1
+000E DAFA             11             DJNZ R2,L2 
+                      12                
+                      13             END
+A51 MACRO ASSEMBLER  EXP3                                                                 02/20/2021 14:02:27 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0000H   A   
+DELAY. . . . . . .  C ADDR   0008H   A   
+L1 . . . . . . . .  C ADDR   000CH   A   
+L2 . . . . . . . .  C ADDR   000AH   A   
+L3 . . . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
