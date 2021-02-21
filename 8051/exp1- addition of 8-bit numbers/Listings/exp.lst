@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 11:43:10 PAGE     1
+A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 18:19:33 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -11,12 +11,14 @@ LOC  OBJ            LINE     SOURCE
 0000                   1             ORG 0000H
                        2                     
 0000 7410              3                     MOV A,#10H
-0002 7ACD              4                     MOV R2,#0CDH
+0002                   4                     MOV R2,#CDH
+*** _________________________________________________^
+*** ERROR #A45 IN 4 (exp.asm, LINE 4): UNDEFINED SYMBOL (PASS-2)
 0004 2A                5                     ADD A,R2
 0005 80FE              6     LOOP:   JMP LOOP
                        7                     
                        8                     END
-A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 11:43:10 PAGE     2
+A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 18:19:33 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -24,10 +26,11 @@ SYMBOL TABLE LISTING
 
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
+CDH. . . . . . . .    ----   -----       
 LOOP . . . . . . .  C ADDR   0005H   A   
 
 
 REGISTER BANK(S) USED: 0 
 
 
-ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
+ASSEMBLY COMPLETE.  0 WARNING(S), 1 ERROR(S)

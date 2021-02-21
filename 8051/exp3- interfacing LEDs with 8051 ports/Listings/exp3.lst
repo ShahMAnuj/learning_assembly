@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  EXP3                                                                 02/20/2021 14:02:27 PAGE     1
+A51 MACRO ASSEMBLER  EXP3                                                                 02/21/2021 19:48:49 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -10,18 +10,20 @@ LOC  OBJ            LINE     SOURCE
 
 0000                   1             ORG 0000H
                        2     
-0000 7BFF              3     AGAIN:  MOV R3,#0FFH
-0002 1108              4     L3:     ACALL DELAY
-0004 DBFC              5             DJNZ R3,L3
-0006 80F8              6             SJMP AGAIN
-                       7     
-0008 7AFF              8     DELAY:  MOV R2,#0FFH
-000A 79FF              9     L2:     MOV R1,#0FFH
-000C D9FE             10     L1:     DJNZ R1,L1
-000E DAFA             11             DJNZ R2,L2 
-                      12                
-                      13             END
-A51 MACRO ASSEMBLER  EXP3                                                                 02/20/2021 14:02:27 PAGE     2
+0000 7580FF            3     MAIN:   MOV P0,#0FFH
+0003 110C              4             ACALL DELAY
+0005 758000            5             MOV P0,#00H
+0008 110C              6                     ACALL DELAY
+000A 80F4              7             JMP MAIN
+                       8     
+000C 7AFF              9     DELAY:  MOV R2,#0FFH
+000E 79FF             10     L2:     MOV R1,#0FFH
+0010 D9FE             11     L1:     DJNZ R1,L1
+0012 DAFA             12             DJNZ R2,L2 
+0014 22               13                     RET
+                      14                     
+                      15                     END
+A51 MACRO ASSEMBLER  EXP3                                                                 02/21/2021 19:48:49 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -29,11 +31,11 @@ SYMBOL TABLE LISTING
 
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
-AGAIN. . . . . . .  C ADDR   0000H   A   
-DELAY. . . . . . .  C ADDR   0008H   A   
-L1 . . . . . . . .  C ADDR   000CH   A   
-L2 . . . . . . . .  C ADDR   000AH   A   
-L3 . . . . . . . .  C ADDR   0002H   A   
+DELAY. . . . . . .  C ADDR   000CH   A   
+L1 . . . . . . . .  C ADDR   0010H   A   
+L2 . . . . . . . .  C ADDR   000EH   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
 
 
 REGISTER BANK(S) USED: 0 
