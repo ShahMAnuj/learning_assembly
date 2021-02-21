@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  EXP                                                                  02/20/2021 15:55:19 PAGE     1
+A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 11:43:10 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -13,10 +13,10 @@ LOC  OBJ            LINE     SOURCE
 0000 7410              3                     MOV A,#10H
 0002 7ACD              4                     MOV R2,#0CDH
 0004 2A                5                     ADD A,R2
-0005 80FE              6     AGAIN:  SJMP AGAIN
+0005 80FE              6     LOOP:   JMP LOOP
                        7                     
                        8                     END
-A51 MACRO ASSEMBLER  EXP                                                                  02/20/2021 15:55:19 PAGE     2
+A51 MACRO ASSEMBLER  EXP                                                                  02/21/2021 11:43:10 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -24,7 +24,7 @@ SYMBOL TABLE LISTING
 
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
-AGAIN. . . . . . .  C ADDR   0005H   A   
+LOOP . . . . . . .  C ADDR   0005H   A   
 
 
 REGISTER BANK(S) USED: 0 
