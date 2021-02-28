@@ -1,0 +1,67 @@
+A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 21:27:05 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\exp5.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp5.asm SET(SMALL) DEBUG PRINT(.\Listings\exp5.lst) OBJECT(.\Objects\e
+                      xp5.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1             ORG 0000H
+                       2                     
+0000 7401              3     MAIN:   MOV A,#01H
+0002 20A003            4                     JB P2.0,CLOCKWISE
+0005 20A107            5                     JB P2.1,ANTICLOCKWISE
+                       6     
+0008                   7     CLOCKWISE:      
+0008 F580              8                     MOV P0,A
+000A 1116              9                     ACALL DELAY
+000C 23               10                     RL A
+000D 80F9             11                     JMP CLOCKWISE
+                      12                     
+000F                  13     ANTICLOCKWISE:
+000F F580             14                     MOV P0,A
+0011 1116             15                     ACALL DELAY
+0013 03               16                     RR A
+0014 80F9             17                     JMP ANTICLOCKWISE
+                      18                     
+0016 7A14             19     DELAY:  MOV R2,#14H
+0018 758910           20     L1:     MOV TMOD,#10H
+001B 758D4B           21                     MOV TH1,#4BH
+001E 758BFD           22                     MOV TL1,#0FDH
+0021 D28E             23                     SETB TR1
+0023 308FFD           24     L2:             JNB TF1,L2
+0026 C28E             25                     CLR TR1
+0028 C28F             26                     CLR TF1
+002A DAEC             27                     DJNZ R2,L1
+002C 22               28                     RET
+                      29                     
+                      30                     END
+A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 21:27:05 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ANTICLOCKWISE. . .  C ADDR   000FH   A   
+CLOCKWISE. . . . .  C ADDR   0008H   A   
+DELAY. . . . . . .  C ADDR   0016H   A   
+L1 . . . . . . . .  C ADDR   0018H   A   
+L2 . . . . . . . .  C ADDR   0023H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

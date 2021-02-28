@@ -46,7 +46,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>exp5_parallel_blinking</OutputName>
+          <OutputName>exp5</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -127,7 +127,7 @@
           <Simulator>
             <UseSimulator>1</UseSimulator>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>0</RunToMain>
+            <RunToMain>1</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
             <RestoreWatchpoints>1</RestoreWatchpoints>
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>exp5_parallel_blinking.asm</FileName>
+              <FileName>exp5.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\exp5_parallel_blinking.asm</FilePath>
+              <FilePath>.\exp5.asm</FilePath>
             </File>
           </Files>
         </Group>

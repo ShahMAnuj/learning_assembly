@@ -1,0 +1,20 @@
+        ORG 0000H
+		
+MAIN:   MOV P0,#0FFH
+        ACALL DELAY
+        MOV P0,#00H
+		ACALL DELAY
+        JMP MAIN
+
+DELAY:	MOV R2,#14H
+L1: 	MOV TMOD,#10H
+		MOV TH1,#4BH
+		MOV TL1,#0FDH
+		SETB TR1
+L2:		JNB TF1,L2
+		CLR TR1
+		CLR TF1
+		DJNZ R2,L1
+		RET
+		
+		END		

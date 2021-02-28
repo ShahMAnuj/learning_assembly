@@ -1,0 +1,54 @@
+A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 21:22:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\exp4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp4.asm SET(SMALL) DEBUG PRINT(.\Listings\exp4.lst) OBJECT(.\Objects\e
+                      xp4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1             ORG 0000H
+                       2                     
+0000 7580FF            3     MAIN:   MOV P0,#0FFH
+0003 110C              4             ACALL DELAY
+0005 758000            5             MOV P0,#00H
+0008 110C              6                     ACALL DELAY
+000A 80F4              7             JMP MAIN
+                       8     
+000C 7A14              9     DELAY:  MOV R2,#14H
+000E 758910           10     L1:     MOV TMOD,#10H
+0011 758D4B           11                     MOV TH1,#4BH
+0014 758BFD           12                     MOV TL1,#0FDH
+0017 D28E             13                     SETB TR1
+0019 308FFD           14     L2:             JNB TF1,L2
+001C C28E             15                     CLR TR1
+001E C28F             16                     CLR TF1
+0020 DAEC             17                     DJNZ R2,L1
+0022 22               18                     RET
+                      19                     
+                      20                     END             
+A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 21:22:52 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   000CH   A   
+L1 . . . . . . . .  C ADDR   000EH   A   
+L2 . . . . . . . .  C ADDR   0019H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
