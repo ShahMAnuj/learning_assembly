@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/28/2021  21:27:06  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/28/2021  22:18:24  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -32,7 +32,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\exp5 (EXP5)
   C:000FH         SYMBOL        ANTICLOCKWISE
   C:0008H         SYMBOL        CLOCKWISE
   C:0016H         SYMBOL        DELAY
-  C:0018H         SYMBOL        L1
+  C:0021H         SYMBOL        L1
   C:0023H         SYMBOL        L2
   C:0000H         SYMBOL        MAIN
   D:0080H         SYMBOL        P0
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\exp5 (EXP5)
   C:001EH         LINE#         22
   C:0021H         LINE#         23
   C:0023H         LINE#         24
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  02/28/2021  21:27:06  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  02/28/2021  22:18:24  PAGE 2
 
 
   C:0026H         LINE#         25

@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 21:22:52 PAGE     1
+A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 22:11:23 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -17,18 +17,18 @@ LOC  OBJ            LINE     SOURCE
 000A 80F4              7             JMP MAIN
                        8     
 000C 7A14              9     DELAY:  MOV R2,#14H
-000E 758910           10     L1:     MOV TMOD,#10H
+000E 758910           10             MOV TMOD,#10H
 0011 758D4B           11                     MOV TH1,#4BH
 0014 758BFD           12                     MOV TL1,#0FDH
-0017 D28E             13                     SETB TR1
+0017 D28E             13     L1:             SETB TR1
 0019 308FFD           14     L2:             JNB TF1,L2
 001C C28E             15                     CLR TR1
 001E C28F             16                     CLR TF1
-0020 DAEC             17                     DJNZ R2,L1
+0020 DAF5             17                     DJNZ R2,L1
 0022 22               18                     RET
                       19                     
                       20                     END             
-A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 21:22:52 PAGE     2
+A51 MACRO ASSEMBLER  EXP4                                                                 02/28/2021 22:11:23 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -37,7 +37,7 @@ SYMBOL TABLE LISTING
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
 DELAY. . . . . . .  C ADDR   000CH   A   
-L1 . . . . . . . .  C ADDR   000EH   A   
+L1 . . . . . . . .  C ADDR   0017H   A   
 L2 . . . . . . . .  C ADDR   0019H   A   
 MAIN . . . . . . .  C ADDR   0000H   A   
 P0 . . . . . . . .  D ADDR   0080H   A   

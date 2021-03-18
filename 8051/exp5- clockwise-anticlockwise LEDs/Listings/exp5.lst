@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 21:27:05 PAGE     1
+A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 22:18:23 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -27,18 +27,18 @@ LOC  OBJ            LINE     SOURCE
 0014 80F9             17                     JMP ANTICLOCKWISE
                       18                     
 0016 7A14             19     DELAY:  MOV R2,#14H
-0018 758910           20     L1:     MOV TMOD,#10H
+0018 758910           20             MOV TMOD,#10H
 001B 758D4B           21                     MOV TH1,#4BH
 001E 758BFD           22                     MOV TL1,#0FDH
-0021 D28E             23                     SETB TR1
+0021 D28E             23     L1:             SETB TR1
 0023 308FFD           24     L2:             JNB TF1,L2
 0026 C28E             25                     CLR TR1
 0028 C28F             26                     CLR TF1
-002A DAEC             27                     DJNZ R2,L1
+002A DAF5             27                     DJNZ R2,L1
 002C 22               28                     RET
                       29                     
                       30                     END
-A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 21:27:05 PAGE     2
+A51 MACRO ASSEMBLER  EXP5                                                                 02/28/2021 22:18:23 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -49,7 +49,7 @@ N A M E             T Y P E  V A L U E   ATTRIBUTES
 ANTICLOCKWISE. . .  C ADDR   000FH   A   
 CLOCKWISE. . . . .  C ADDR   0008H   A   
 DELAY. . . . . . .  C ADDR   0016H   A   
-L1 . . . . . . . .  C ADDR   0018H   A   
+L1 . . . . . . . .  C ADDR   0021H   A   
 L2 . . . . . . . .  C ADDR   0023H   A   
 MAIN . . . . . . .  C ADDR   0000H   A   
 P0 . . . . . . . .  D ADDR   0080H   A   

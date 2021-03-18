@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/28/2021  21:22:53  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/28/2021  22:11:28  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -30,7 +30,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\exp4 (EXP4)
 
   -------         MODULE        EXP4
   C:000CH         SYMBOL        DELAY
-  C:000EH         SYMBOL        L1
+  C:0017H         SYMBOL        L1
   C:0019H         SYMBOL        L2
   C:0000H         SYMBOL        MAIN
   D:0080H         SYMBOL        P0
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\exp4 (EXP4)
 ******************************************************************************
 * RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0023H BYTE ( 1%) *
 ******************************************************************************
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  02/28/2021  21:22:53  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  02/28/2021  22:11:28  PAGE 2
 
 
 
